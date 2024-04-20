@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* html, body{
+    height: 100%;
+    width: 100%;
+} */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #000;
+}
+
+.nav img{
+    height: 60px;
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav .nav-last{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav .nav-last a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav .nav-last button{
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.main h1{
+    display: flex;
+    gap: 20px;
+    font-size: 100px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.main h1 span{
+    background-color: brown;
+    font-size: 30px;
+    padding: 15px 25px;
+    border-radius: 25px;
+}
+
+.main img{
+    height: 200px;
+    position: absolute;
+    
+    border-radius: 12px;
+}
+
+.main img:nth-child(4){
+    /* main has total five element and the 4th element is img tag, t will apply to 4th element of the the main */
+    top: 14%;
+    left: 7%;
+}
+
+.main img:nth-child(5){
+    bottom: 14%;
+    right: 8%;
+}
+
+.main h5{
+    position: absolute;
+    bottom: 9%;
+    font-size: 20px;
+}
+
+/* .main h1:nth-child(3){
+    color: aqua;
+} */
+
+/* .main h1:nth-last-child(3){
+    color: blueviolet;
+    background-color: aqua;
+} */
